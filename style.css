@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  padding: 20px;
+}
+
+.container {
+  background: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+
+.subtitulo {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 24px;
+}
+
+#form-busca {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#input-cidade {
+  flex: 1;
+  padding: 12px 14px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+#input-cidade:focus {
+  border-color: #4facfe;
+}
+
+#form-busca button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #4facfe;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#form-busca button:hover {
+  background: #2196f3;
+}
+
+.erro {
+  color: #e53e3e;
+  font-size: 0.9rem;
+  min-height: 20px;
+  margin-bottom: 8px;
+}
+
+.resultado {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.escondido {
+  display: none;
+}
+
+#nome-cidade {
+  font-size: 1.3rem;
+  color: #1e293b;
+}
+
+#data-hora {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin-bottom: 16px;
+}
+
+.clima-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.icone {
+  font-size: 3rem;
+}
+
+.temperatura {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.descricao {
+  color: #475569;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.detalhes {
+  display: flex;
+  justify-content: space-around;
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 14px 8px;
+}
+
+.detalhe-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rotulo {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.detalhe-item span:last-child {
+  font-weight: 600;
+  color: #1e293b;
+}

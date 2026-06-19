@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consulta de Clima</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+    <h1>Consulta de Clima 🌤️</h1>
+    <p class="subtitulo">Digite o nome de uma cidade para ver a previsão do tempo</p>
+
+    <form id="form-busca">
+      <input
+        type="text"
+        id="input-cidade"
+        placeholder="Ex: São Paulo"
+        autocomplete="off"
+      />
+      <button type="submit">Buscar</button>
+    </form>
+
+    <p id="mensagem-erro" class="erro"></p>
+
+    <section id="resultado" class="resultado escondido">
+      <h2 id="nome-cidade"></h2>
+      <p id="data-hora"></p>
+
+      <div class="clima-principal">
+        <span id="icone-clima" class="icone"></span>
+        <span id="temperatura" class="temperatura"></span>
+      </div>
+
+      <p id="descricao-clima" class="descricao"></p>
+
+      <div class="detalhes">
+        <div class="detalhe-item">
+          <span class="rotulo">Sensação térmica</span>
+          <span id="sensacao-termica"></span>
+        </div>
+        <div class="detalhe-item">
+          <span class="rotulo">Umidade</span>
+          <span id="umidade"></span>
+        </div>
+        <div class="detalhe-item">
+          <span class="rotulo">Vento</span>
+          <span id="vento"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
